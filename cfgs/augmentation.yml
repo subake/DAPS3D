@@ -1,0 +1,82 @@
+augment_fov:
+    use_augment_fov:
+        True
+        # False
+    alpha:
+        0.1
+    fov_max:
+        1.5707
+
+earth_depth_threshold:
+    10
+
+human_augmentation:
+    use_human_augmentation:
+        # True
+        False
+    max_human_augment:
+        15
+    human_z_low:
+        -0.5
+    human_z_high:
+        1
+
+z_jitter:
+    use_z_jitter:
+        # True
+        False
+    ego_z_low:
+        0.3
+    ego_z_high:
+        1.8
+
+xy_flip:
+    use_xy_flip:
+        True
+        # False
+
+xy_rotate:
+    use_xy_rotate:
+        True
+        # False
+
+pixel_dropout:
+    use_pixel_dropout:
+        # True
+        False
+    dropout_count:
+        10
+
+    x_alpha:
+        10
+    x_beta:
+        90
+    y_alpha:
+        2
+    y_beta:
+        5
+
+mask_noise:
+    use_mask_noise:
+        # True
+        False
+
+    dropout_count:
+        10
+    x_alpha:
+        10
+    x_beta:
+        90
+    y_alpha:
+        2
+    y_beta:
+        5
+    scale:
+        1
+
+tzone_mask:
+    use_tzone_mask:
+        True
+        # False
+    mask_path:
+        '../../../cfgs/mask.png'

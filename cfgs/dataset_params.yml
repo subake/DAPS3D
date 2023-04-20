@@ -1,0 +1,37 @@
+kitti:
+    sensor:
+        name: "HDL64"
+        type: "spherical"
+        fov_up: 3
+        fov_down: -25
+    img_prop:
+        width: 1024
+        height: 64
+rellis:
+    sensor:
+        name: "VLP32"
+        type: "spherical"
+        fov_up: 15
+        fov_down: -25
+    img_prop:
+        width: 1024
+        height: 64
+daps1:
+    sensor:
+        name: "Oulster"
+        type: "spherical"
+        fov_up: 45
+        fov_down: -45
+    img_prop:
+        width: 1024
+        height: 64
+daps2:
+    sensor:
+        name: "Oulster"
+        type: "spherical"
+        fov_up: 45
+        fov_down: -45
+    img_prop:
+        width: 1024
+        height: 64
+        
