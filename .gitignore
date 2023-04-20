@@ -1,3 +1,10 @@
+# log files
+logs/
+
+# WandB files
+wandb.login
+wandb/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
