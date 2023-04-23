@@ -17,26 +17,35 @@ Particular attention is paid to the performance of the developed models, which d
 ## ToDo List
 
 - [x] Release code
-- [ ] Document for Installation
+- [x] Document for Installation
 - [ ] Document for Dataset Preparation
 - [ ] Document for Testing and Training
-- [ ] Trained models
 - [ ] Evaluation
+- [ ] Release trained models
 - [ ] Release datasets: DAPS-1 & DAPS-2
 
 ## Installation Instructions
-TODO
+- We use conda environments 
+- We use different Python and PyTorch versions for our models
+- For complete installation instructions, please see [Installation](INSTALL.md).
+
 ## Dataset Preparation
-TODO
+- We release our DAPS-1 and DAPS-2 datasets.
+- We also experiment on SemanticKITTI and RELLIS3D datasets.
+- Please see [Preparing Datasets](DATASET_PREPARATION.md) for complete instructions for preparing the datasets.
+
 ## Execution Instructions
-TODO
 
-[//]: # (### Training)
+### Training
 
-[//]: # (### Evaluation)
+- Please see [Getting Started](GETTING_STARTED.md) for training commands.
+
+### Evaluation
+
+- Please see [Getting Started](GETTING_STARTED.md) for evaluation commands.
 
 ## Results
-TODO
+You can find our pretrained models in [Getting Started](GETTING_STARTED.md).
 
 ## Citation
 If you found DAPS3D useful in your research, please consider starring ⭐ us on GitHub and citing 📚 us in your research!
