@@ -30,7 +30,7 @@ Particular attention is paid to the performance of the developed models, which d
 - For complete installation instructions, please see [Installation](INSTALL.md).
 
 ## Dataset Preparation
-- We release our DAPS-1 and DAPS-2 datasets.
+- We release our [DAPS-1](DATASET_PREPARATION.md#daps-1) and [DAPS-2](DATASET_PREPARATION.md#daps-2) datasets.
 - We also experiment on SemanticKITTI and RELLIS-3D datasets.
 - Please see [Preparing Datasets](DATASET_PREPARATION.md) for complete instructions for preparing the datasets.
 
