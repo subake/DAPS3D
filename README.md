@@ -18,11 +18,11 @@ Particular attention is paid to the performance of the developed models, which d
 
 - [x] Release code
 - [x] Document for Installation
-- [ ] Document for Dataset Preparation
+- [x] Document for Dataset Preparation
 - [ ] Document for Testing and Training
 - [ ] Evaluation
 - [ ] Release trained models
-- [ ] Release datasets: DAPS-1 & DAPS-2
+- [x] Release datasets: DAPS-1 & DAPS-2
 
 ## Installation Instructions
 - We use conda environments 
@@ -30,9 +30,9 @@ Particular attention is paid to the performance of the developed models, which d
 - For complete installation instructions, please see [Installation](INSTALL.md).
 
 ## Dataset Preparation
-- We release our [DAPS-1](DATASET_PREPARATION.md#daps-1) and [DAPS-2](DATASET_PREPARATION.md#daps-2) datasets.
+- We release our [DAPS-1](DATASET.md#daps-1) and [DAPS-2](DATASET.md#daps-2) datasets.
 - We also experiment on SemanticKITTI and RELLIS-3D datasets.
-- Please see [Preparing Datasets](DATASET_PREPARATION.md) for complete instructions for preparing the datasets.
+- Please see [Datasets Preparation](DATASET.md#datasets-preparation) for complete instructions for preparing the datasets.
 
 ## Execution Instructions
 
