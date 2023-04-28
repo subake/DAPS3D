@@ -27,6 +27,17 @@ It is one of the most popular large-scale datasets for segmentation methods eval
 ### [RELLIS-3D](https://github.com/unmannedlab/RELLIS-3D)
 Is is a  relevant off-road dataset that consists of fully-annotated LiDAR scans from off-road environment with a lot of scenes containing lawns, dirt roads, various vegetation. At the same time, this dataset contains a relatively small number of labeled people and vehicles.
 
+## Datasets Statistics
+We provide statistics on the proportion of points belonging to the five joined categories among the total number of points in LiDAR scans for datasets listed above.
+
+| Dataset | Resolution | Scans / Maps | LiDAR | Vehicle | Human | Surface | Static Obstacle | Unlabeled |
+|   :---:| :---:   |  :---: |    :---:   |    :---:   |    :---:   |    :---:   |    :---:   |    :---:   |
+| [DAPS-1](#daps-1) | 1024x64 | 19,061 | 64-lines Ouster OS0 | 3.89% | 0.46% | 70.70% | 24.89% | 0.03% |
+| [DAPS-2](#daps-2) | 1024x64 | 109 | 64-lines Ouster OS0 | 0.01% | 2.00% | 12.00% | 11.00% | 74.99% |
+| [SemanticKITTI](#semantickitti) | 2048x64 | 19,130 | Velodyne HDL-64E | 0.01% | 0.01% | 43.91% | 47.54% | 8.52% | 
+| [RELLIS-3D](#rellis-3d) | 1024x32 | 13,556 | 64-lines Ouster OS1 | 0.02% | 2.28% | 23.41% | 32.64% | 41.70% |
+
+
 ## Datasets Preparation
 
 ### Folder Structure
