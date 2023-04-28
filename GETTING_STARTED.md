@@ -18,7 +18,7 @@ This is default command structure for training:
            -p <path/to/pretrained/logs> \
            -c <gpu to run>
 ```
-You need to chose `<model_name>` between: `salsanet`,  `salsanet_rec`, `salsanet_rec_lstm`, `salsanext`, `ddrnet` or s`egformer`.
+You need to choose `<model_name>` between: `salsanet`,  `salsanet_rec`, `salsanet_rec_lstm`, `salsanext`, `ddrnet` or s`egformer`.
 
 **SalsaNet**
 ```bash
