@@ -56,4 +56,4 @@ cd ./train/tasks/semantic
            -l "$l" \
            -p "$p"
 
-# ./train.sh -d /Datasets/multisalsa/ -f cfgs/ -a cfgs/ddrnet23_slim.yml -m ddrnet -l ./logs/ -c 0
+# ./train.sh -d /Dataset/ -f cfgs/ -a cfgs/ddrnet23_slim.yml -m ddrnet -l ./logs/ -c 0

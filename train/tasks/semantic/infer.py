@@ -26,14 +26,14 @@ if __name__ == '__main__':
         help='Data augmentations and label configurations. No Default',
     )
     parser.add_argument(
-        '--log', '-l',
+        '--predictions', '-p',
         type=str,
         default=os.path.expanduser("~") + '/logs/' +
                 datetime.datetime.now().strftime("%Y-%-m-%d-%H:%M") + '/',
         help='Directory to put the predictions. Default: ~/logs/date+time'
     )
     parser.add_argument(
-        '--model', '-m',
+        '--model', '-l',
         type=str,
         required=True,
         default=None,
@@ -41,7 +41,7 @@ if __name__ == '__main__':
     )
 
     parser.add_argument(
-        '--model_name', '-n',
+        '--model_name', '-m',
         type=str,
         required=True,
         default='salsanext'
@@ -63,7 +63,7 @@ if __name__ == '__main__':
     print("INTERFACE:")
     print("dataset", FLAGS.dataset)
     print('data_cfg', FLAGS.data_cfg)
-    print("log", FLAGS.log)
+    print("predictions", FLAGS.predictions)
     print("model", FLAGS.model)
     print("infering", FLAGS.split)
     print("----------\n")
@@ -119,12 +119,12 @@ if __name__ == '__main__':
     print('Opening label params file %s' % lab_params_file_path)
     LAB_PARAMS = yaml.safe_load(open(lab_params_file_path, 'r'))
 
-    if not os.path.isdir(FLAGS.log):
+    if not os.path.isdir(FLAGS.predictions):
         print('Error: output directory does not exist!')
-        print(FLAGS.log)
+        print(FLAGS.predictions)
         quit()
 
     # create user and infer dataset
     user = User(ARCH, NAV, STATS, SENSORS, LAB_PARAMS, AUGMENT, FLAGS.dataset,
-                FLAGS.log, FLAGS.model, FLAGS.model_name, FLAGS.split)
+                FLAGS.predictions, FLAGS.model, FLAGS.model_name, FLAGS.split)
     user.infer()

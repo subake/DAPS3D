@@ -298,4 +298,4 @@ if __name__ == '__main__':
         for split in ('train','valid'):
             evaluate(FLAGS.dataset, NAV, STATS, SENSORS, LAB_PARAMS, split, FLAGS.predictions)
 
-# ./evaluate_iou.py -d /Datasets/multisalsa/ -f ./../../../cfgs -p ./../../../logs/infer/ddrnet_aug5_T/ --split valid
+# ./evaluate_iou.py -d /Dataset/ -f ./../../../cfgs -p ./../../../logs/infer/ddrnet_aug5_T/ --split valid
