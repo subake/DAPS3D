@@ -21,29 +21,41 @@ This is default command structure for training:
 You need to choose `<model_name>` between: `salsanet`,  `salsanet_rec`, `salsanet_rec_lstm`, `salsanext`, `ddrnet` or s`egformer`.
 
 **SalsaNet**
+
+With default config requires 6 GB on GPU
 ```bash
 ./train.sh -d /Dataset/ -f cfgs/ -a cfgs/salsanext.yml -m salsanet -l ./logs/ -c 0
 ```
 
 **SalsaNetRec**
+
+With default config requires 7 GB on GPU
 ```bash
 ./train.sh -d /Dataset/ -f cfgs/ -a cfgs/salsanext.yml -m salsanet_rec -l ./logs/ -c 0
 ```
 **SalsaNetRecLSTM**
+
+With default config requires 9 GB on GPU
 ```bash
 ./train.sh -d /Dataset/ -f cfgs/ -a cfgs/salsanext.yml -m salsanet_rec_lstm -l ./logs/ -c 0
 ```
 **SalsaNext**
+
+With default config requires 10 GB on GPU
 ```bash
 ./train.sh -d /Dataset/ -f cfgs/ -a cfgs/salsanext.yml -m salsanext -l ./logs/ -c 0
 ```
 **DDRNet**
 
-Change `MODEL.MOD` inside [`ddrnet23_slim.yml`](./cfgs/ddrnet23_slim.yml) to `'none'`, `'oc'` or `'da'` for different model configurations before run.  
+Change `MODEL.MOD` inside [`ddrnet23_slim.yml`](./cfgs/ddrnet23_slim.yml) to `'none'`, `'oc'` or `'da'` for different model configurations before run. 
+
+With default config requires 2, 3 & 10 GB on GPU for `none`, `oc` & `da` respectively 
 ```bash
 ./train.sh -d /Dataset/ -f cfgs/ -a cfgs/ddrnet23_slim.yml -m ddrnet -l ./logs/ -c 0
 ```
 **SegFormer**
+
+With default config requires 11 GB on GPU
 ```bash
 ./train.sh -d /Dataset/ -f cfgs/ -a cfgs/segformer.yml -m segformer -l ./logs/ -c 0
 ```
