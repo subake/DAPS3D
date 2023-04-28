@@ -132,13 +132,13 @@ class Trainer():
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         
         with torch.no_grad():
-            if model_mode == 'salsanext_rec_lstm':
+            if model_mode == 'salsanet_rec_lstm':
                 self.model = SalsaNetRecLSTM(self.parser.get_n_classes())
                 self.criterion = nn.NLLLoss(weight=self.loss_w).to(self.device)
-            elif model_mode == 'salsanext_rec':
+            elif model_mode == 'salsanet_rec':
                 self.model = SalsaNetRec(self.parser.get_n_classes())
                 self.criterion = nn.NLLLoss(weight=self.loss_w).to(self.device)
-            elif model_mode == 'salsanext_real':
+            elif model_mode == 'salsanext':
                 self.model = SalsaNext(self.parser.get_n_classes())
                 self.criterion = nn.NLLLoss(weight=self.loss_w).to(self.device)
             elif self.model_mode == 'ddrnet':
