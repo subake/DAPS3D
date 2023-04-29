@@ -83,10 +83,11 @@ In order to calculate metrics for your predicrions, run [`eval.sh`](./eval.sh). 
 ## Pretrained Models
 
 ### Segmentation models evaluated on DAPS-2 dataset
-These are inference results on DAPS-2 for the models listed in the following sections (see our [Paper]())
+These are inference results on [DAPS-2](./DATASET.md#daps-2) for the models listed in the following sections (see our [Paper]())
+
+#### Models trained on SemanticKITTI
 | Method | $mIoU$, % | $IoU$[human], % | $IoU$[surface], % | $IoU$[obstacle], % | Checkpoint |
 |   :---| :---:   |  :---: |    :---:   |    :---:   |    :---:   |
-| <td colspan=5>Trained on SemanticKITTI</td>
 | SalsaNet | **0.405** | 0.056 | 0.662 | **0.498** | [model](https://drive.google.com/file/d/1TsZxuFdRpss9kV2CXpViqhvlyJZuYjnt/view?usp=share_link) |
 | SalsaNetRec | 0.267 | 0.034 | 0.478 | 0.290 | [model](https://drive.google.com/file/d/1JnY0XnhzGXFmVvzVKr_sWg9O4wqFlFvy/view?usp=share_link) |
 | SalsaNextRecLSTM | 0.338 | 0.075 | 0.565 | <ins>0.373</ins> | [model](https://drive.google.com/file/d/1UHYc4M704dwjIW02sE7QrS4vZp7RwWx4/view?usp=share_link) |
@@ -95,7 +96,10 @@ These are inference results on DAPS-2 for the models listed in the following sec
 | DDRNetOC | 0.323 | 0.015 | <ins>0.739</ins> | 0.216 | [model](https://drive.google.com/file/d/1I4g7SOAIEqzQzkdgGVz_eYl5w2-PjLlw/view?usp=share_link) |
 | DDRNetDA | <ins>0.369</ins> | 0.040 | 0.705 | 0.361 | [model](https://drive.google.com/file/d/1iWqTvLDKdF_jxtzRNsPP0j1CFfcA4o8Q/view?usp=share_link) |
 | Segformer | 0.230 | **0.166** | 0.182 | 0.343 | [model](https://drive.google.com/file/d/1qM-rgoga3KYdGyH9wU2BmRisXjtaJPRH/view?usp=share_link) |
-| <td colspan=5>Trained on SemanticKITTI + RELLIS-3D</td> |
+
+#### Models trained on SemanticKITTI + RELLIS-3D
+| Method | $mIoU$, % | $IoU$[human], % | $IoU$[surface], % | $IoU$[obstacle], % | Checkpoint |
+|   :---| :---:   |  :---: |    :---:   |    :---:   |    :---:   |
 | SalsaNet | **0.712** | 0.733 | <ins>0.760</ins> | **0.643** | [model](https://drive.google.com/file/d/1u91Klb_bDpY-tgktIBF_GJoiCdKUxgI-/view?usp=share_link) |
 | SalsaNetRec | 0.481 | 0.446 | 0.590 | 0.406 | [model](https://drive.google.com/file/d/1UalGUKak7Ono7d0lN6XPuqL1jsfMn27K/view?usp=share_link) |
 | SalsaNextRecLSTM | <ins>0.689</ins> | <ins>0.770</ins> | **0.761** | 0.537 | [model](https://drive.google.com/file/d/1TjrvJt6RHSdc1Mb75x83yji-Mx1HVUAf/view?usp=share_link) |
@@ -104,7 +108,10 @@ These are inference results on DAPS-2 for the models listed in the following sec
 | DDRNetOC | 0.616 | 0.724 | 0.586 | <ins>0.539</ins> | [model](https://drive.google.com/file/d/1BFwGFUAzXieXHv-tOaiL430MUb3GrAj6/view?usp=share_link) |
 | DDRNetDA | 0.541 | 0.614 | 0.507 | 0.503 | [model](https://drive.google.com/file/d/18-_gxPP-2thy-26JJWwnT9etbro8po7w/view?usp=share_link) |
 | Segformer | 0.290 | 0.412 | 0.054 | 0.404 | [model](https://drive.google.com/file/d/1G0sxs1ZKwuKzToV_kCyiawJqPE0fJeJw/view?usp=share_link) |
-| <td colspan=5>Trained on DAPS-1</td> |
+
+#### Models trained on DAPS-1
+| Method | $mIoU$, % | $IoU$[human], % | $IoU$[surface], % | $IoU$[obstacle], % | Checkpoint |
+|   :---| :---:   |  :---: |    :---:   |    :---:   |    :---:   |
 | SalsaNet | 0.575 | 0.479 | 0.741 | 0.504 | [model](https://drive.google.com/file/d/1N_bElG9oYPvMltCfweorihCr2SSakbQF/view?usp=share_link) |
 | SalsaNetRec | 0.609 | <ins>0.596</ins> | <ins>0.748</ins> | 0.482 | [model](https://drive.google.com/file/d/13Tu687Y7XcYmQAkXHDhARSsPfu16NT7t/view?usp=share_link) |
 | SalsaNextRecLSTM | <ins>0.624</ins> | 0.532 | **0.783** | 0.557 | [model](https://drive.google.com/file/d/1WKXwYrCGQ5enshJgUU9R_eWB9aL4NDTQ/view?usp=share_link) |
