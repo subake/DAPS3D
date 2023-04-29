@@ -63,6 +63,8 @@ All models are trained with augmentation set 5 with T-Zone (see our [Paper]())
 | DDRNetDA | 0.691 | 0.770 | 0.129 | 0.977 | 0.886 |
 | Segformer | 0.530 | 0.495 | 0.052 | 0.909 | 0.665 |
 
+<br/><br/>
+
 ### DAPS-2
 ![DAPS-2_Domain](images/domain_adaptation.png)
 
