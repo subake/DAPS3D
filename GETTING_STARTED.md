@@ -86,7 +86,7 @@ In order to calculate metrics for your predicrions, run [`eval.sh`](./eval.sh). 
 These are inference results on [DAPS-2](./DATASET.md#daps-2) for the models listed in the following sections (see our [Paper]())
 
 #### Models trained on SemanticKITTI
-| Method | $mIoU$, % | $IoU$[human], % | $IoU$[surface], % | $IoU$[obstacle], % | Checkpoint |
+| Model | $mIoU$, % | $IoU$[human], % | $IoU$[surface], % | $IoU$[obstacle], % | Checkpoint |
 |   :---| :---:   |  :---: |    :---:   |    :---:   |    :---:   |
 | SalsaNet | **0.405** | 0.056 | 0.662 | **0.498** | [model](https://drive.google.com/file/d/1TsZxuFdRpss9kV2CXpViqhvlyJZuYjnt/view?usp=share_link) |
 | SalsaNetRec | 0.267 | 0.034 | 0.478 | 0.290 | [model](https://drive.google.com/file/d/1JnY0XnhzGXFmVvzVKr_sWg9O4wqFlFvy/view?usp=share_link) |
@@ -98,7 +98,7 @@ These are inference results on [DAPS-2](./DATASET.md#daps-2) for the models list
 | Segformer | 0.230 | **0.166** | 0.182 | 0.343 | [model](https://drive.google.com/file/d/1qM-rgoga3KYdGyH9wU2BmRisXjtaJPRH/view?usp=share_link) |
 
 #### Models trained on SemanticKITTI + RELLIS-3D
-| Method | $mIoU$, % | $IoU$[human], % | $IoU$[surface], % | $IoU$[obstacle], % | Checkpoint |
+| Model | $mIoU$, % | $IoU$[human], % | $IoU$[surface], % | $IoU$[obstacle], % | Checkpoint |
 |   :---| :---:   |  :---: |    :---:   |    :---:   |    :---:   |
 | SalsaNet | **0.712** | 0.733 | <ins>0.760</ins> | **0.643** | [model](https://drive.google.com/file/d/1u91Klb_bDpY-tgktIBF_GJoiCdKUxgI-/view?usp=share_link) |
 | SalsaNetRec | 0.481 | 0.446 | 0.590 | 0.406 | [model](https://drive.google.com/file/d/1UalGUKak7Ono7d0lN6XPuqL1jsfMn27K/view?usp=share_link) |
@@ -110,7 +110,7 @@ These are inference results on [DAPS-2](./DATASET.md#daps-2) for the models list
 | Segformer | 0.290 | 0.412 | 0.054 | 0.404 | [model](https://drive.google.com/file/d/1G0sxs1ZKwuKzToV_kCyiawJqPE0fJeJw/view?usp=share_link) |
 
 #### Models trained on DAPS-1
-| Method | $mIoU$, % | $IoU$[human], % | $IoU$[surface], % | $IoU$[obstacle], % | Checkpoint |
+| Model | $mIoU$, % | $IoU$[human], % | $IoU$[surface], % | $IoU$[obstacle], % | Checkpoint |
 |   :---| :---:   |  :---: |    :---:   |    :---:   |    :---:   |
 | SalsaNet | 0.575 | 0.479 | 0.741 | 0.504 | [model](https://drive.google.com/file/d/1N_bElG9oYPvMltCfweorihCr2SSakbQF/view?usp=share_link) |
 | SalsaNetRec | 0.609 | <ins>0.596</ins> | <ins>0.748</ins> | 0.482 | [model](https://drive.google.com/file/d/13Tu687Y7XcYmQAkXHDhARSsPfu16NT7t/view?usp=share_link) |
@@ -124,7 +124,7 @@ These are inference results on [DAPS-2](./DATASET.md#daps-2) for the models list
 
 ### Segmentation models trained and evaluated on DAPS-1 dataset
 All models are trained with augmentation set 5 with T-Zone (see our [Paper]())
-| Method | $mIoU$, % | $IoU$[vehicle], % | $IoU$[human], % | $IoU$[surface], % | $IoU$[obstacle], % | Checkpoint |
+| Model | $mIoU$, % | $IoU$[vehicle], % | $IoU$[human], % | $IoU$[surface], % | $IoU$[obstacle], % | Checkpoint |
 |   :---| :---:   |  :---: |    :---:   |    :---:   |    :---:   |    :---:   |
 | SalsaNet | <ins>0.867</ins> | **0.880** | 0.646 | <ins>0.989</ins> | <ins>0.953</ins> |  [model](https://drive.google.com/file/d/1N_bElG9oYPvMltCfweorihCr2SSakbQF/view?usp=share_link) |
 | SalsaNetRec | 0.850 | 0.836 | <ins>0.680</ins> | 0.974 | 0.908 |  [model](https://drive.google.com/file/d/13Tu687Y7XcYmQAkXHDhARSsPfu16NT7t/view?usp=share_link) |
@@ -137,7 +137,7 @@ All models are trained with augmentation set 5 with T-Zone (see our [Paper]())
 
 ### Segmentation models trained and evaluated on SemanticKITTI dataset
 All models are trained with augmentation set 5 without T-Zone (see our [Paper]())
-| Method | $mIoU$, % | $IoU$[vehicle], % | $IoU$[human], % | $IoU$[surface], % | $IoU$[obstacle], % | Checkpoint |
+| Model | $mIoU$, % | $IoU$[vehicle], % | $IoU$[human], % | $IoU$[surface], % | $IoU$[obstacle], % | Checkpoint |
 |   :---| :---:   |  :---: |    :---:   |    :---:   |    :---:   |    :---:   |
 | SalsaNet | 0.787 | 0.882 | 0.412 | **0.929** | **0.924** | [model](https://drive.google.com/file/d/1TsZxuFdRpss9kV2CXpViqhvlyJZuYjnt/view?usp=share_link) |
 | SalsaNetRec | <ins>0.789</ins> | 0.855 | <ins>0.488</ins> | 0.913 | 0.900 | [model](https://drive.google.com/file/d/1JnY0XnhzGXFmVvzVKr_sWg9O4wqFlFvy/view?usp=share_link) |
@@ -150,7 +150,7 @@ All models are trained with augmentation set 5 without T-Zone (see our [Paper]()
 
 ### Segmentation models trained and evaluated on SemanticKITTI and RELLIS-3D datasets
 All models are trained with augmentation set 5 with T-Zone (see our [Paper]())
-| Method | $mIoU$, % | $IoU$[vehicle], % | $IoU$[human], % | $IoU$[surface], % | $IoU$[obstacle], % | Checkpoint |
+| Model | $mIoU$, % | $IoU$[vehicle], % | $IoU$[human], % | $IoU$[surface], % | $IoU$[obstacle], % | Checkpoint |
 |   :---| :---:   |  :---: |    :---:   |    :---:   |    :---:   |    :---:   |
 | SalsaNet | **0.832** | 0.869 | <ins>0.886</ins> | **0.789** | **0.782** | [model](https://drive.google.com/file/d/1u91Klb_bDpY-tgktIBF_GJoiCdKUxgI-/view?usp=share_link) |
 | SalsaNetRec | 0.808 | 0.858 | 0.847 | 0.763 | 0.766 | [model](https://drive.google.com/file/d/1UalGUKak7Ono7d0lN6XPuqL1jsfMn27K/view?usp=share_link) |
