@@ -5,6 +5,8 @@ This document provides a brief intro of the usage of DAPS3D.
 
 - Select desired augmentation setup inside [`augmentation.yml`](./cfgs/augmentation.yml). You can find more detailed description and different augmentation setups in our [Paper](). 
 
+![Augmentations](images/augmentations.png)
+
 - We have different configs for our models: [`salsanext.yml`](./cfgs/salsanext.yml), [`ddrnet23_slim.yml`](./cfgs/ddrnet23_slim.yml) & [`segformer.yml`](./cfgs/segformer.yml). You can change hyperparameters there before training.
 
 ### Train Commands
