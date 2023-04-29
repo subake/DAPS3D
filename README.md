@@ -21,7 +21,7 @@ Particular attention is paid to the performance of the developed models, which d
 - [x] Document for Dataset Preparation
 - [x] Document for Testing and Training
 - [ ] Evaluation
-- [ ] Release trained models
+- [x] Release trained models
 - [x] Release datasets: DAPS-1 & DAPS-2
 
 ## Installation Instructions
