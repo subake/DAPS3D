@@ -1,7 +1,19 @@
-# DAPS3D
-DAPS3D: Domain Adaptive Projective Segmentation of 3D LiDAR Point Clouds
+# DAPS3D: Domain Adaptive Projective Segmentation of 3D LiDAR Point Clouds
 
 [![Framework: PyTorch](https://img.shields.io/badge/Framework-PyTorch-orange.svg)](https://pytorch.org/) [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+
+[Alexey Klokov](),
+[Di Un Pak](),
+[Aleksandr Khorin](https://www.linkedin.com/in/alex-khorin/),
+[Dmitry Yudin](),
+[Leon Kochiev](),
+[Vladimir Luchinskiy](),
+[Vitaly Bezuglyj]()
+
+[[`arXiv`]()] [[`pdf`]()] [[`BibTeX`](#citation)]
+
+This repo contains the code for our paper **DAPS3D: Domain Adaptive Projective Segmentation of 3D LiDAR Point Clouds**.
 
 ## Abstract
 LiDARs are one of the key sources of reliable environmental ranging information for autonomous vehicles. Segmentation of 3D scene elements (roads, buildings, people, cars, etc.) based on LiDAR point clouds has limitations. On the one hand, point- and voxel-based segmentation neural networks have insufficiently high speed. On the other hand, modern labeled datasets mainly contain street scenes recorded for driverless cars and few datasets for mobile delivery robots or cleaners that must work in parks and yards with heavy pedestrian traffic. This article aims to overcome these limitations.
@@ -37,7 +49,7 @@ Particular attention is paid to the performance of the developed models, which d
 ## Execution Instructions
 
 ### Training
-
+- We train all our models using 2 × RTX 2080Ti (11 GB each) GPUs.
 - Please see [Getting Started](GETTING_STARTED.md) for training commands.
 
 ### Evaluation
