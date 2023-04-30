@@ -3,15 +3,15 @@
 [![Framework: PyTorch](https://img.shields.io/badge/Framework-PyTorch-orange.svg)](https://pytorch.org/) [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 
-[Alexey Klokov](),
-[Di Un Pak](),
+[Alexey Klokov](https://github.com/Laggg),
+[Di Un Pak](https://github.com/lemondrok),
 [Aleksandr Khorin](https://www.linkedin.com/in/alex-khorin/),
-[Dmitry Yudin](),
+[Dmitry Yudin](https://github.com/yuddim),
 [Leon Kochiev](),
 [Vladimir Luchinskiy](),
-[Vitaly Bezuglyj]()
+[Vitaly Bezuglyj](https://github.com/VitalyyBezuglyj)
 
-[[`arXiv`]()] [[`pdf`]()] [[`BibTeX`](#citation)]
+
 
 This repo contains the code for our paper **DAPS3D: Domain Adaptive Projective Segmentation of 3D LiDAR Point Clouds**.
 
