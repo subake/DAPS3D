@@ -1,4 +1,5 @@
 #!/bin/sh
+
 helpFunction() {
    echo "Options not found"
    exit 1
