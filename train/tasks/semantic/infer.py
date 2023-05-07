@@ -7,6 +7,8 @@ import yaml
 import os
 from os import path
 
+import __init__ as booger
+
 from tasks.semantic.modules.user import *
 
 
@@ -44,7 +46,7 @@ if __name__ == '__main__':
         '--model_name', '-m',
         type=str,
         required=True,
-        default='salsanext'
+        default='salsanet'
     )
 
     parser.add_argument(

@@ -11,8 +11,6 @@ from torch import nn
 
 from tqdm import tqdm
 
-from tasks.semantic.modules.segmentator import *
-
 from tasks.semantic.modules.SalsaNetRecLSTM import SalsaNetRecLSTM
 from tasks.semantic.modules.SalsaNetRec import SalsaNetRec
 from tasks.semantic.modules.SalsaNext import SalsaNext
@@ -51,19 +49,19 @@ class User():
         self.parser = Parser(self.datadir, ARCH, NAV, STATS, SENSORS, LAB_PARAMS, AUGMENT, batch_size=1)
 
         # concatenate the encoder and the head
-        if 'salsanext' in self.modelname:
+        if 'salsa' in self.modelname:
             with torch.no_grad():
                 print('modeldir: %s' % self.modeldir)
                 model_path = os.path.join(self.modeldir, 'SalsaNet_valid_best')
                 print('model_path: %s' % model_path)
 
-                if self.modelname == 'salsanext':
+                if self.modelname == 'salsanet':
                     self.model = SalsaNet(self.parser.get_n_classes())
-                elif self.modelname == 'salsanext_real':
+                elif self.modelname == 'salsanext':
                     self.model = SalsaNext(self.parser.get_n_classes())
-                elif self.modelname == 'salsanext_rec':
+                elif self.modelname == 'salsanet_rec':
                     self.model = SalsaNetRec(self.parser.get_n_classes())
-                elif self.modelname == 'salsanext_rec_lstm':
+                elif self.modelname == 'salsanet_rec_lstm':
                     self.model = SalsaNetRecLSTM(self.parser.get_n_classes())
                 
                 self.model = nn.DataParallel(self.model)
@@ -131,7 +129,7 @@ class User():
                 
         else:
             with torch.no_grad():
-                self.model = Segmentator(self.ARCH,
+                self.model = SalsaNet(self.ARCH,
                                          self.parser.get_n_classes(),
                                          self.modeldir)
 

@@ -8,6 +8,7 @@ from os import path
 import shutil
 from shutil import copyfile
 import yaml
+import __init__ as booger
 from tasks.semantic.modules.trainer import *
 from pip._vendor.distlib.compat import raw_input
 
@@ -59,7 +60,7 @@ if __name__ == '__main__':
     # checking model
     if FLAGS.model not in ('salsanet','salsanext', 'salsanet_rec', 'salsanet_rec_lstm', 'ddrnet', 'segformer'):
         print('Flags model:',FLAGS.model)
-        raise NotImplementedError('you need to chose between: salsanet, salsanext, ddrnet or segformer')
+        raise NotImplementedError('you need to chose between: salsanet, salsanet_rec, salsanet_rec_lstm, salsanext, ddrnet or segformer')
     
     # print summary of what we will do
     print('----------')
