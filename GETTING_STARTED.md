@@ -90,14 +90,14 @@ These are inference results on [DAPS-2](./DATASET.md#daps-2) for the models list
 #### Models trained on SemanticKITTI
 | Model | $mIoU$, % | $IoU$[human], % | $IoU$[surface], % | $IoU$[obstacle], % | Checkpoint |
 |   :---| :---:   |  :---: |    :---:   |    :---:   |    :---:   |
-| SalsaNet | **0.405** | 0.056 | 0.662 | **0.498** | [model]() |
-| SalsaNetRec | 0.267 | 0.034 | 0.478 | 0.290 | [model]() |
-| SalsaNextRecLSTM | 0.338 | 0.075 | 0.565 | <ins>0.373</ins> | [model]() |
-| SalsaNext | 0.258 | 0.074 | 0.423 | 0.277 | [model]() |
-| DDRNet | 0.345 | <ins>0.080</ins> | **0.768** | 0.187 | [model]() |
-| DDRNetOC | 0.323 | 0.015 | <ins>0.739</ins> | 0.216 | [model]() |
-| DDRNetDA | <ins>0.369</ins> | 0.040 | 0.705 | 0.361 | [model]() |
-| Segformer | 0.230 | **0.166** | 0.182 | 0.343 | [model]() |
+| SalsaNet | **0.405** | 0.056 | 0.662 | **0.498** | [model](https://drive.google.com/file/d/1eHKGhjuOZDUT3m6bEePGi8BfVAm3upp7/view?usp=share_link) |
+| SalsaNetRec | 0.267 | 0.034 | 0.478 | 0.290 | [model](https://drive.google.com/file/d/1DKCu5bd1xLhY6TNnt9Vulw0KiLcu7PXr/view?usp=share_link) |
+| SalsaNextRecLSTM | 0.338 | 0.075 | 0.565 | <ins>0.373</ins> | [model](https://drive.google.com/file/d/1m3UxiRSErxxgl9oy6wZFUF5op1pj6iC3/view?usp=share_link) |
+| SalsaNext | 0.258 | 0.074 | 0.423 | 0.277 | [model](https://drive.google.com/file/d/1LE-xa_imnkMWfVaTl78j3OlkRZg9qq9p/view?usp=share_link) |
+| DDRNet | 0.345 | <ins>0.080</ins> | **0.768** | 0.187 | [model](https://drive.google.com/file/d/1RD-4-6xCefSY4WGdY6josGjTtmtWvPcB/view?usp=share_link) |
+| DDRNetOC | 0.323 | 0.015 | <ins>0.739</ins> | 0.216 | [model](https://drive.google.com/file/d/1vkAu0caizss13hqXwB3pag9yiQ-Odykq/view?usp=share_link) |
+| DDRNetDA | <ins>0.369</ins> | 0.040 | 0.705 | 0.361 | [model](https://drive.google.com/file/d/1v0B4CkkK92486dEAht4vfbOxpsDvCBhI/view?usp=share_link) |
+| Segformer | 0.230 | **0.166** | 0.182 | 0.343 | [model](https://drive.google.com/file/d/1hdFsG89KH3ArN7xtSgsbkE56tnUStJBR/view?usp=share_link) |
 
 #### Models trained on SemanticKITTI + RELLIS-3D
 | Model | $mIoU$, % | $IoU$[human], % | $IoU$[surface], % | $IoU$[obstacle], % | Checkpoint |
@@ -141,14 +141,14 @@ All models are trained with augmentation set 5 with T-Zone (see our [Paper]())
 All models are trained with augmentation set 5 without T-Zone (see our [Paper]())
 | Model | $mIoU$, % | $IoU$[vehicle], % | $IoU$[human], % | $IoU$[surface], % | $IoU$[obstacle], % | Checkpoint |
 |   :---| :---:   |  :---: |    :---:   |    :---:   |    :---:   |    :---:   |
-| SalsaNet | 0.787 | 0.882 | 0.412 | **0.929** | **0.924** | [model]() |
-| SalsaNetRec | <ins>0.789</ins> | 0.855 | <ins>0.488</ins> | 0.913 | 0.900 | [model]() |
-| SalsaNetRecLSTM | 0.751 | <ins>0.887</ins> | 0.271 | <ins>0.927</ins> | <ins>0.920</ins> | [model]() |
-| SalsaNext | **0.821** | **0.907** | **0.564** | 0.905 | 0.907 | [model]() |
-| DDRNet | 0.692 | 0.750 | 0.225 | 0.901 | 0.893 | [model]() |
-| DDRNetOC | 0.687 | 0.739 | 0.222 | 0.900 | 0.889 | [model]() |
-| DDRNetDA | 0.696 | 0.754 | 0.232 | 0.903 | 0.895 | [model]() |
-| SegFormer | 0.539 | 0.437 | 0.048 | 0.893 | 0.777 | [model]() |
+| SalsaNet | 0.787 | 0.882 | 0.412 | **0.929** | **0.924** | [model](https://drive.google.com/file/d/1eHKGhjuOZDUT3m6bEePGi8BfVAm3upp7/view?usp=share_link) |
+| SalsaNetRec | <ins>0.789</ins> | 0.855 | <ins>0.488</ins> | 0.913 | 0.900 | [model](https://drive.google.com/file/d/1DKCu5bd1xLhY6TNnt9Vulw0KiLcu7PXr/view?usp=share_link) |
+| SalsaNetRecLSTM | 0.751 | <ins>0.887</ins> | 0.271 | <ins>0.927</ins> | <ins>0.920</ins> | [model](https://drive.google.com/file/d/1m3UxiRSErxxgl9oy6wZFUF5op1pj6iC3/view?usp=share_link) |
+| SalsaNext | **0.821** | **0.907** | **0.564** | 0.905 | 0.907 | [model](https://drive.google.com/file/d/1LE-xa_imnkMWfVaTl78j3OlkRZg9qq9p/view?usp=share_link) |
+| DDRNet | 0.692 | 0.750 | 0.225 | 0.901 | 0.893 | [model](https://drive.google.com/file/d/1RD-4-6xCefSY4WGdY6josGjTtmtWvPcB/view?usp=share_link) |
+| DDRNetOC | 0.687 | 0.739 | 0.222 | 0.900 | 0.889 | [model](https://drive.google.com/file/d/1vkAu0caizss13hqXwB3pag9yiQ-Odykq/view?usp=share_link) |
+| DDRNetDA | 0.696 | 0.754 | 0.232 | 0.903 | 0.895 | [model](https://drive.google.com/file/d/1v0B4CkkK92486dEAht4vfbOxpsDvCBhI/view?usp=share_link) |
+| SegFormer | 0.539 | 0.437 | 0.048 | 0.893 | 0.777 | [model](https://drive.google.com/file/d/1hdFsG89KH3ArN7xtSgsbkE56tnUStJBR/view?usp=share_link) |
 
 ### Segmentation models trained and evaluated on SemanticKITTI and RELLIS-3D datasets
 All models are trained with augmentation set 5 with T-Zone (see our [Paper]())
