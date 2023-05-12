@@ -1,6 +1,6 @@
 MODEL:
   NAME: ddrnet_23_slim_salsa
-  MOD: da         # must be 'none', 'oc' or 'da'
+  MOD: none         # must be 'none', 'oc' or 'da'
   NUM_OUTPUTS: 2
   ALIGN_CORNERS: true
   CHANNELS: [32, 128, 64]
@@ -9,8 +9,6 @@ LOSS:
   OHEMTHRES: 0.9
   OHEMKEEP: 131072
   BALANCE_WEIGHTS: [1, 0.4]
-DATASET:
-  CLASS_WEIGHTS: [0.0000, 20.7709, 665.7101, 2.2702, 2.0731]
 
 ################################################################################
 # training parameters
@@ -50,4 +48,3 @@ post:
       search: 5
       sigma: 1.0
       cutoff: 1.0
-
