@@ -78,4 +78,7 @@ cfgs/
 
 - `SalsaNet` models require data stats like _Expected Value_ and _Standard Deviation_ for each of the channels of the input scan: `(x, y, z, range)`. You can calculate them by running [`dataset_stat.py`](./dataset_utils/dataset_stat.py) script and put them inside [`data_stats.yml`](./cfgs/data_stats.yml).
 
-- [`label_params.yml`](./cfgs/label_params.yml) config contains category description and mapping for training.
+```bash
+python dataset_stat.py /Dataset/ ../cfgs/
+```
+- [`label_params.yml`](./cfgs/label_params.yml) config contains category description and mapping for training. Before training update `content` with the results calculated by [`dataset_stat.py`](./dataset_utils/dataset_stat.py) based on selected datasets. This is needed for category weights calculation.
