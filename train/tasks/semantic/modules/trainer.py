@@ -146,7 +146,7 @@ class Trainer():
                 self.criterion = OhemCrossEntropy(ignore_label=0,
                                             thres=self.ARCH["LOSS"]["OHEMTHRES"],
                                             min_kept=self.ARCH["LOSS"]["OHEMKEEP"],
-                                            weight=self.ARCH["DATASET"]["CLASS_WEIGHTS"],
+                                            weight=self.loss_w.data.tolist(),
                                             config=self.ARCH)
                 self.model = FullModel(self.model, self.criterion)
             elif self.model_mode == 'segformer':
@@ -154,7 +154,7 @@ class Trainer():
                 self.criterion = OhemCrossEntropy(ignore_label=0,
                                             thres=self.ARCH["LOSS"]["OHEMTHRES"],
                                             min_kept=self.ARCH["LOSS"]["OHEMKEEP"],
-                                            weight=self.ARCH["DATASET"]["CLASS_WEIGHTS"],
+                                            weight=self.loss_w.data.tolist(),
                                             config=self.ARCH)
                 self.model = FullModel(self.model, self.criterion)
             else:
@@ -215,7 +215,8 @@ class Trainer():
                                 map_location=lambda storage, loc: storage)
             self.model.load_state_dict(w_dict['state_dict'], strict=True)
             print('Loaded weights ', self.modelname)
-            self.model.loss = self.criterion
+            if self.model_mode in ['ddrnet', 'segformer']:
+                self.model.loss = self.criterion
             self.epoch = 40 # w_dict['epoch'] + 1
             # self.optimizer.load_state_dict(w_dict['optimizer'])
             # self.epoch = w_dict['epoch'] + 1
