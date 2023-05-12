@@ -121,4 +121,4 @@ if __name__ == '__main__':
     args = argparser.parse_args()
     calculate_stats(args.dataset_path, args.cfg)
 
-
+# python dataset_stat.py /Dataset/ ../cfgs/
