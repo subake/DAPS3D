@@ -102,14 +102,14 @@ These are inference results on [DAPS-2](./DATASET.md#daps-2) for the models list
 #### Models trained on SemanticKITTI + RELLIS-3D
 | Model | $mIoU$, % | $IoU$[human], % | $IoU$[surface], % | $IoU$[obstacle], % | Checkpoint |
 |   :---| :---:   |  :---: |    :---:   |    :---:   |    :---:   |
-| SalsaNet | **0.712** | 0.733 | <ins>0.760</ins> | **0.643** | [model]() |
-| SalsaNetRec | 0.481 | 0.446 | 0.590 | 0.406 | [model]() |
-| SalsaNextRecLSTM | <ins>0.689</ins> | <ins>0.770</ins> | **0.761** | 0.537 | [model]() |
-| SalsaNext | 0.663 | **0.799** | 0.684 | 0.505 | [model]() |
-| DDRNet | 0.580 | 0.697 | 0.535 | 0.509 | [model]() |
-| DDRNetOC | 0.616 | 0.724 | 0.586 | <ins>0.539</ins> | [model]() |
-| DDRNetDA | 0.541 | 0.614 | 0.507 | 0.503 | [model]() |
-| Segformer | 0.290 | 0.412 | 0.054 | 0.404 | [model]() |
+| SalsaNet | **0.712** | 0.733 | <ins>0.760</ins> | **0.643** | [model](https://drive.google.com/file/d/1R9VgcyXU8h5qpKdrbZiMbmY2KU0FAfVH/view?usp=share_link) |
+| SalsaNetRec | 0.481 | 0.446 | 0.590 | 0.406 | [model](https://drive.google.com/file/d/123L5iXFJVZpGJEzNaeTmtbvcIo4Qos8s/view?usp=share_link) |
+| SalsaNextRecLSTM | <ins>0.689</ins> | <ins>0.770</ins> | **0.761** | 0.537 | [model](https://drive.google.com/file/d/1oEtCUYobnxEAyuXJk43AXtADLdoR4cSk/view?usp=share_link) |
+| SalsaNext | 0.663 | **0.799** | 0.684 | 0.505 | [model](https://drive.google.com/file/d/18KXyRIyKHi4FmdBeHoBCbmDkPgFD5Ywy/view?usp=share_link) |
+| DDRNet | 0.580 | 0.697 | 0.535 | 0.509 | [model](https://drive.google.com/file/d/1bmgiVIDdfawC4UIKXCSiZnKug3EewAiM/view?usp=share_link) |
+| DDRNetOC | 0.616 | 0.724 | 0.586 | <ins>0.539</ins> | [model](https://drive.google.com/file/d/1zKepOpjfqYLhrgYX5DBG6WJEwsbvwb8g/view?usp=share_link) |
+| DDRNetDA | 0.541 | 0.614 | 0.507 | 0.503 | [model](https://drive.google.com/file/d/1S-p7VbpBntdEXYGaIfuUDbf6V_Hy7dsw/view?usp=share_link) |
+| Segformer | 0.290 | 0.412 | 0.054 | 0.404 | [model](https://drive.google.com/file/d/1c-crMj1EsbSJ2s7m9O9K--wWAHO3sP5v/view?usp=share_link) |
 
 #### Models trained on DAPS-1
 | Model | $mIoU$, % | $IoU$[human], % | $IoU$[surface], % | $IoU$[obstacle], % | Checkpoint |
@@ -154,11 +154,11 @@ All models are trained with augmentation set 5 without T-Zone (see our [Paper]()
 All models are trained with augmentation set 5 with T-Zone (see our [Paper]())
 | Model | $mIoU$, % | $IoU$[vehicle], % | $IoU$[human], % | $IoU$[surface], % | $IoU$[obstacle], % | Checkpoint |
 |   :---| :---:   |  :---: |    :---:   |    :---:   |    :---:   |    :---:   |
-| SalsaNet | **0.832** | 0.869 | <ins>0.886</ins> | **0.789** | **0.782** | [model]() |
-| SalsaNetRec | 0.808 | 0.858 | 0.847 | 0.763 | 0.766 | [model]() |
-| SalsaNetRecLSTM | <ins>0.828</ins> | <ins>0.889</ins> | 0.880 | <ins>0.770</ins> | <ins>0.774</ins> | [model]() |
-| SalsaNext | **0.832** | **0.904** | **0.906** | 0.755 | 0.763 | [model]() |
-| DDRNet | 0.706 | 0.759 | 0.654 | 0.685 | 0.725 | [model]() |
-| DDRNetOC | 0.705 | 0.749 | 0.652 | 0.693 | 0.728 | [model]() |
-| DDRNetDA | 0.658 | 0.715 | 0.471 | 0.716 | 0.731 | [model]() |
-| SegFormer | 0.533 | 0.448 | 0.423 | 0.616 | 0.643 | [model]() |
+| SalsaNet | **0.832** | 0.869 | <ins>0.886</ins> | **0.789** | **0.782** | [model](https://drive.google.com/file/d/1R9VgcyXU8h5qpKdrbZiMbmY2KU0FAfVH/view?usp=share_link) |
+| SalsaNetRec | 0.808 | 0.858 | 0.847 | 0.763 | 0.766 | [model](https://drive.google.com/file/d/123L5iXFJVZpGJEzNaeTmtbvcIo4Qos8s/view?usp=share_link) |
+| SalsaNetRecLSTM | <ins>0.828</ins> | <ins>0.889</ins> | 0.880 | <ins>0.770</ins> | <ins>0.774</ins> | [model](https://drive.google.com/file/d/1oEtCUYobnxEAyuXJk43AXtADLdoR4cSk/view?usp=share_link) |
+| SalsaNext | **0.832** | **0.904** | **0.906** | 0.755 | 0.763 | [model](https://drive.google.com/file/d/18KXyRIyKHi4FmdBeHoBCbmDkPgFD5Ywy/view?usp=share_link) |
+| DDRNet | 0.706 | 0.759 | 0.654 | 0.685 | 0.725 | [model](https://drive.google.com/file/d/1bmgiVIDdfawC4UIKXCSiZnKug3EewAiM/view?usp=share_link) |
+| DDRNetOC | 0.705 | 0.749 | 0.652 | 0.693 | 0.728 | [model](https://drive.google.com/file/d/1zKepOpjfqYLhrgYX5DBG6WJEwsbvwb8g/view?usp=share_link) |
+| DDRNetDA | 0.658 | 0.715 | 0.471 | 0.716 | 0.731 | [model](https://drive.google.com/file/d/1S-p7VbpBntdEXYGaIfuUDbf6V_Hy7dsw/view?usp=share_link) |
+| SegFormer | 0.533 | 0.448 | 0.423 | 0.616 | 0.643 | [model](https://drive.google.com/file/d/1c-crMj1EsbSJ2s7m9O9K--wWAHO3sP5v/view?usp=share_link) |
