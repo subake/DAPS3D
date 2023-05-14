@@ -3,8 +3,6 @@
 import numpy as np
 import scipy.misc
 import tensorflow as tf
-from torch.utils.tensorboard import SummaryWriter
-import torch
 try:
     from StringIO import StringIO  # Python 2.7
 except ImportError:
