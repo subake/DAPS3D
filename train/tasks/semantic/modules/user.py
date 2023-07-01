@@ -11,6 +11,7 @@ from torch import nn
 
 from tqdm import tqdm
 
+from tasks.semantic.modules.SalsaNextRecLSTM import SalsaNextRecLSTM
 from tasks.semantic.modules.SalsaNetRecLSTM import SalsaNetRecLSTM
 from tasks.semantic.modules.SalsaNetRec import SalsaNetRec
 from tasks.semantic.modules.SalsaNext import SalsaNext
@@ -63,6 +64,8 @@ class User():
                     self.model = SalsaNetRec(self.parser.get_n_classes())
                 elif self.modelname == 'salsanet_rec_lstm':
                     self.model = SalsaNetRecLSTM(self.parser.get_n_classes())
+                elif self.modelname == 'salsanext_rec_lstm':
+                    self.model = SalsaNextRecLSTM(self.parser.get_n_classes())
                 
                 self.model = nn.DataParallel(self.model)
 

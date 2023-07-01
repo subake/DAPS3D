@@ -17,6 +17,7 @@ from common.logger import Logger
 from common.sync_batchnorm.batchnorm import convert_model
 from common.warmupLR import *
 from tasks.semantic.modules.ioueval import *
+from tasks.semantic.modules.SalsaNextRecLSTM import SalsaNextRecLSTM
 from tasks.semantic.modules.SalsaNetRecLSTM import SalsaNetRecLSTM
 from tasks.semantic.modules.SalsaNetRec import SalsaNetRec
 from tasks.semantic.modules.SalsaNext import SalsaNext
@@ -140,6 +141,9 @@ class Trainer():
                 self.criterion = nn.NLLLoss(weight=self.loss_w).to(self.device)
             elif model_mode == 'salsanext':
                 self.model = SalsaNext(self.parser.get_n_classes())
+                self.criterion = nn.NLLLoss(weight=self.loss_w).to(self.device)
+            elif model_mode == 'salsanext_rec_lstm':
+                self.model = SalsaNextRecLSTM(self.parser.get_n_classes())
                 self.criterion = nn.NLLLoss(weight=self.loss_w).to(self.device)
             elif self.model_mode == 'ddrnet':
                 self.model = get_seg_model(self.parser.get_n_classes(), channels=self.ARCH["MODEL"]["CHANNELS"], mode='train')

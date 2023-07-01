@@ -58,9 +58,9 @@ if __name__ == '__main__':
     FLAGS.log = path.join(FLAGS.log, 'logs', datetime.datetime.now().strftime('%Y-%-m-%d-%H:%M'))
 
     # checking model
-    if FLAGS.model not in ('salsanet','salsanext', 'salsanet_rec', 'salsanet_rec_lstm', 'ddrnet', 'segformer'):
+    if FLAGS.model not in ('salsanet', 'salsanet_rec', 'salsanet_rec_lstm', 'salsanext', 'salsanext_rec_lstm', 'ddrnet', 'segformer'):
         print('Flags model:',FLAGS.model)
-        raise NotImplementedError('you need to chose between: salsanet, salsanet_rec, salsanet_rec_lstm, salsanext, ddrnet or segformer')
+        raise NotImplementedError('you need to chose between: salsanet, salsanet_rec, salsanet_rec_lstm, salsanext, salsanext_rec_lstm, ddrnet or segformer')
     
     # print summary of what we will do
     print('----------')
