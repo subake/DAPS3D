@@ -33,9 +33,9 @@ We provide statistics on the proportion of points belonging to the five joined c
 | Dataset | Resolution | Scans / Maps | LiDAR | Vehicle | Human | Surface | Static Obstacle | Unlabeled |
 |   :---:| :---:   |  :---: |    :---:   |    :---:   |    :---:   |    :---:   |    :---:   |    :---:   |
 | [DAPS-1](#daps-1) | 1024x64 | 23,056 | 64-lines Ouster OS0 | 3.89% | 0.46% | 70.70% | 24.89% | 0.03% |
-| [DAPS-2](#daps-2) | 1024x64 | 109 | 64-lines Ouster OS0 | 0.01% | 2.00% | 12.00% | 11.00% | 74.99% |
-| [SemanticKITTI](#semantickitti) | 2048x64 | 19,130 | Velodyne HDL-64E | 0.01% | 0.01% | 43.91% | 47.54% | 8.52% | 
-| [RELLIS-3D](#rellis-3d) | 1024x32 | 13,556 | 64-lines Ouster OS1 | 0.02% | 2.28% | 23.41% | 32.64% | 41.70% |
+| [DAPS-2](#daps-2) | 1024x64 | 109 | 64-lines Ouster OS0 | 0.04% | 7.97% | 47.96% | 43.98% | 0.05% |
+| [SemanticKITTI](#semantickitti) | 2048x64 | 19,130 | Velodyne HDL-64E | 5.14% | 0.02% | 43.92% | 48.89% | 2.02% | 
+| [RELLIS-3D](#rellis-3d) | 1024x32 | 13,556 | 64-lines Ouster OS1 | 0.02% | 0.81% | 20.18% | 54.54% | 24.45% |
 
 
 ## Datasets Preparation
