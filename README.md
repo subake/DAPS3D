@@ -11,7 +11,7 @@
 [Vladimir Luchinskiy](),
 [Vitaly Bezuglyj](https://github.com/VitalyyBezuglyj)
 
-
+[[`pdf`](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10193772)] [[`BibTeX`](#citation)]
 
 This repo contains the code for our paper **DAPS3D: Domain Adaptive Projective Segmentation of 3D LiDAR Point Clouds**.
 
@@ -23,7 +23,7 @@ Secondly, we have proposed several original augmentations for spherical projecti
 Finally, we introduce a new method to generate synthetic datasets for domain adaptation problems. We have developed two new datasets for validating 3D scene outdoor segmentation algorithms: the DAPS-1 dataset, which is based on the augmentation of the reconstructed 3D semantic map, and the DAPS-2 LiDAR dataset, collected by the on-board sensors of a cleaning robot in a park area.
 Particular attention is given to the performance of the developed models, demonstrating their ability to function in real-time.
 
-![SalsaNetRec](images/SalsaNextRec.png)
+![SalsaNetRecAbstract](images/SalsaNextRecAbstract.png)
 ![RecBlock](images/RecBlocks.png)
 
 ## ToDo List
@@ -35,6 +35,7 @@ Particular attention is given to the performance of the developed models, demons
 - [x] Evaluation
 - [x] Release trained models
 - [x] Release datasets: DAPS-1 & DAPS-2
+- [x] Release SalsaNextRecLSTM model
 - [x] Release SalsaNextRecLSTM model
 
 ## Installation Instructions
@@ -63,7 +64,7 @@ You can find our pretrained models in [Getting Started](GETTING_STARTED.md).
 ### DAPS-1
 ![DAPS-1_Results](images/Fig-13.png)
 
-All models are trained with augmentation set 5 with T-Zone (see our [Paper]())
+All models are trained with augmentation set 5 with T-Zone (see our [Paper](https://ieeexplore.ieee.org/document/10193772))
 
 | Model | $mIoU$, % | $IoU$[vehicle], % | $IoU$[human], % | $IoU$[surface], % | $IoU$[obstacle], % |
 |   :---| :---:   |  :---: |    :---:   |    :---:   |    :---:   |
@@ -125,6 +126,16 @@ These are inference results on [DAPS-2](./DATASET.md#daps-2) for the models trai
 
 ## Citation
 If you found DAPS3D useful in your research, please consider starring ⭐ us on GitHub and citing 📚 us in your research!
+```bibtex
+@article{klokov2023daps3d,
+  title={DAPS3D: Domain Adaptive Projective Segmentation of 3D LiDAR Point Clouds},
+  author={Klokov, Alexey and Pak, Di Un and Khorin, Aleksandr and Yudin, Dmitry and Kochiev, Leon and Luchinskiy, Vladimir and Bezuglyj, Vitaly},
+  journal={IEEE Access},
+  year={2023},
+  doi={10.1109/ACCESS.2023.3298706},
+  publisher={IEEE}
+}
+```
 
 ## Licence
 This repository is released under MIT License (see [LICENSE](./LICENSE) file for details).
