@@ -3,7 +3,7 @@ This document provides a brief intro of the usage of DAPS3D.
 ## Training
 - Make shure to cteate conda environment and setup wandb.login for training (See [Installation](./INSTALL.md)).
 
-- Select desired augmentation setup inside [`augmentation.yml`](./cfgs/augmentation.yml). You can find more detailed description and different augmentation setups in our [Paper](). 
+- Select desired augmentation setup inside [`augmentation.yml`](./cfgs/augmentation.yml). You can find more detailed description and different augmentation setups in our [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10193772). 
 
 ![Augmentations](images/augs.png)
 
@@ -91,7 +91,7 @@ In order to calculate metrics for your predicrions, run [`eval.sh`](./eval.sh). 
 ## Pretrained Models
 
 ### Segmentation models trained and evaluated on SemanticKITTI dataset
-All models are trained with augmentation set 5 without T-Zone (see our [Paper]())
+All models are trained with augmentation set 5 without T-Zone (see our [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10193772))
 | Model | $mIoU$, % | $IoU$[vehicle], % | $IoU$[human], % | $IoU$[surface], % | $IoU$[obstacle], % | Checkpoint |
 |   :---| :---:   |  :---: |    :---:   |    :---:   |    :---:   |    :---:   |
 | SalsaNet | 0.787 | 0.882 | 0.412 | **0.929** | **0.924** | [model](https://drive.google.com/file/d/1eHKGhjuOZDUT3m6bEePGi8BfVAm3upp7/view?usp=share_link) |
@@ -105,7 +105,7 @@ All models are trained with augmentation set 5 without T-Zone (see our [Paper]()
 | SegFormer | 0.539 | 0.437 | 0.048 | 0.893 | 0.777 | [model](https://drive.google.com/file/d/1hdFsG89KH3ArN7xtSgsbkE56tnUStJBR/view?usp=share_link) |
 
 ### Segmentation models trained and evaluated on SemanticKITTI and RELLIS-3D datasets
-All models are trained with augmentation set 5 with T-Zone (see our [Paper]())
+All models are trained with augmentation set 5 with T-Zone (see our [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10193772))
 | Model | $mIoU$, % | $IoU$[vehicle], % | $IoU$[human], % | $IoU$[surface], % | $IoU$[obstacle], % | Checkpoint |
 |   :---| :---:   |  :---: |    :---:   |    :---:   |    :---:   |    :---:   |
 | SalsaNet | <ins>0.832</ins> | 0.869 | 0.886 | **0.789** | **0.782** | [model](https://drive.google.com/file/d/1R9VgcyXU8h5qpKdrbZiMbmY2KU0FAfVH/view?usp=share_link) |
@@ -119,7 +119,7 @@ All models are trained with augmentation set 5 with T-Zone (see our [Paper]())
 | SegFormer | 0.533 | 0.448 | 0.423 | 0.616 | 0.643 | [model](https://drive.google.com/file/d/1c-crMj1EsbSJ2s7m9O9K--wWAHO3sP5v/view?usp=share_link) |
 
 ### Segmentation models trained and evaluated on DAPS-1 dataset
-All models are trained with augmentation set 5 with T-Zone (see our [Paper]())
+All models are trained with augmentation set 5 with T-Zone (see our [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10193772))
 | Model | $mIoU$, % | $IoU$[vehicle], % | $IoU$[human], % | $IoU$[surface], % | $IoU$[obstacle], % | Checkpoint |
 |   :---| :---:   |  :---: |    :---:   |    :---:   |    :---:   |    :---:   |
 | SalsaNet | 0.867 | <ins>0.880</ins> | 0.646 | 0.989 | 0.953 |  [model](https://drive.google.com/file/d/1MeoWM69f3uEh2jZ1NFlYShc5IEYa4G-1/view?usp=sharing) |
@@ -133,7 +133,7 @@ All models are trained with augmentation set 5 with T-Zone (see our [Paper]())
 | Segformer | 0.530 | 0.495 | 0.052 | 0.909 | 0.665 |  [model](https://drive.google.com/file/d/1kW9KI6KRwh5eWn1XBMW-N3BMRhndSRzN/view?usp=share_link) |
 
 ### Segmentation models evaluated on DAPS-2 dataset
-These are inference results on [DAPS-2](./DATASET.md#daps-2) for the models listed in the following sections (see our [Paper]())
+These are inference results on [DAPS-2](./DATASET.md#daps-2) for the models listed in the following sections (see our [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10193772))
 
 #### Models trained on SemanticKITTI
 | Model | $mIoU$, % | $IoU$[human], % | $IoU$[surface], % | $IoU$[obstacle], % | Checkpoint |
